@@ -1,0 +1,6 @@
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\DTO\bin\Debug\DTO.dll
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\DTO\bin\Debug\DTO.pdb
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\DTO\obj\Debug\DTO.dll
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\DTO\obj\Debug\DTO.pdb
