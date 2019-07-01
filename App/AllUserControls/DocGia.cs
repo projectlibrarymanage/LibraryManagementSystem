@@ -600,7 +600,7 @@ namespace App
 
             label39.Show();            
             radioButton2.Show();           
-        }        
+        }
 
         // Giới hạn tuổi độc giả từ 18 đến 55
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -623,13 +623,9 @@ namespace App
         // Hạn sử dụng thẻ: 6 tháng
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-            //int dtp2 = int.Parse(dateTimePicker2.Value.Month.ToString());
-            //int year = int.Parse(DateTime.Now.Year.ToString());
-            //int dtp1 = int.Parse(dateTimePicker1.Value.Year.ToString());
-            //int age = (year - dtp1);
-            //textBox10.Text = (year - dtp1).ToString();
-            //int dtp3 = int.Parse(dateTimePicker3.Value.Month.ToString());
-            //dtp3 = dtp2 + 6;
+            DateTime gioihangiatri = dateTimePicker2.Value.AddMonths(6);
+
+            dateTimePicker3.Value = new DateTime(gioihangiatri.Year,gioihangiatri.Month,gioihangiatri.Day);
         }
         //
     }

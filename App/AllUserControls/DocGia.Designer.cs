@@ -39,7 +39,6 @@
             this.label37 = new System.Windows.Forms.Label();
             this.AddReaderBt = new System.Windows.Forms.Button();
             this.ChoseBackBt = new System.Windows.Forms.Button();
-            this.DetailBt = new App.CircleButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -73,7 +72,6 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.circleButton2 = new App.CircleButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -119,6 +117,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.DetailBt = new App.CircleButton();
+            this.circleButton2 = new App.CircleButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -256,21 +256,6 @@
             this.ChoseBackBt.Text = "Quay lại";
             this.ChoseBackBt.UseVisualStyleBackColor = true;
             this.ChoseBackBt.Click += new System.EventHandler(this.ChoseBackBt_Click);
-            // 
-            // DetailBt
-            // 
-            this.DetailBt.BackColor = System.Drawing.Color.White;
-            this.DetailBt.FlatAppearance.BorderSize = 0;
-            this.DetailBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DetailBt.Font = new System.Drawing.Font("Tahoma", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DetailBt.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.DetailBt.Location = new System.Drawing.Point(640, 422);
-            this.DetailBt.Name = "DetailBt";
-            this.DetailBt.Size = new System.Drawing.Size(141, 56);
-            this.DetailBt.TabIndex = 34;
-            this.DetailBt.Text = "     Chi Tiết       Bảng Độc Giả";
-            this.DetailBt.UseVisualStyleBackColor = false;
-            this.DetailBt.Click += new System.EventHandler(this.DetailBt_Click);
             // 
             // label9
             // 
@@ -603,7 +588,6 @@
             this.dateTimePicker3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker3.Location = new System.Drawing.Point(608, 303);
-            this.dateTimePicker3.MaxDate = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker3.MinDate = new System.DateTime(1964, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(146, 31);
@@ -617,7 +601,6 @@
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(290, 303);
-            this.dateTimePicker2.MaxDate = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker2.MinDate = new System.DateTime(1964, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(146, 31);
@@ -636,17 +619,6 @@
             this.dateTimePicker1.TabIndex = 24;
             this.dateTimePicker1.Value = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // circleButton2
-            // 
-            this.circleButton2.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.circleButton2.FlatAppearance.BorderSize = 0;
-            this.circleButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circleButton2.Location = new System.Drawing.Point(636, 419);
-            this.circleButton2.Name = "circleButton2";
-            this.circleButton2.Size = new System.Drawing.Size(149, 62);
-            this.circleButton2.TabIndex = 35;
-            this.circleButton2.UseVisualStyleBackColor = false;
             // 
             // radioButton6
             // 
@@ -1173,6 +1145,32 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // DetailBt
+            // 
+            this.DetailBt.BackColor = System.Drawing.Color.White;
+            this.DetailBt.FlatAppearance.BorderSize = 0;
+            this.DetailBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DetailBt.Font = new System.Drawing.Font("Tahoma", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DetailBt.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.DetailBt.Location = new System.Drawing.Point(640, 422);
+            this.DetailBt.Name = "DetailBt";
+            this.DetailBt.Size = new System.Drawing.Size(141, 56);
+            this.DetailBt.TabIndex = 34;
+            this.DetailBt.Text = "     Chi Tiết       Bảng Độc Giả";
+            this.DetailBt.UseVisualStyleBackColor = false;
+            this.DetailBt.Click += new System.EventHandler(this.DetailBt_Click);
+            // 
+            // circleButton2
+            // 
+            this.circleButton2.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.circleButton2.FlatAppearance.BorderSize = 0;
+            this.circleButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circleButton2.Location = new System.Drawing.Point(636, 419);
+            this.circleButton2.Name = "circleButton2";
+            this.circleButton2.Size = new System.Drawing.Size(149, 62);
+            this.circleButton2.TabIndex = 35;
+            this.circleButton2.UseVisualStyleBackColor = false;
             // 
             // DocGia
             // 
