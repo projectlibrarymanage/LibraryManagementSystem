@@ -1,0 +1,84 @@
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\bin\Debug\App.exe.config
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\bin\Debug\App.exe
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\bin\Debug\App.pdb
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.RegisterForm.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.SignInForm.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.Properties.Resources.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.csproj.GenerateResource.cache
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.csproj.CopyComplete
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.exe
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.pdb
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.UserForm.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.DocGia.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.SachMoi.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.BangBaoCao.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.ChoMuonSach.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.TraSach.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.TraSach.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.csprojAssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\bin\Debug\App.exe.config
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\bin\Debug\App.exe
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\bin\Debug\App.pdb
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.csprojAssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.BangBaoCao.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.ChoMuonSach.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.TimSach.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.TraSach.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.RegisterForm.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.SignInForm.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.Properties.Resources.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.DocGia.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.SachMoi.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.UserForm.resources
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.csproj.GenerateResource.cache
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.csproj.CopyComplete
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.exe
+C:\Users\DELL\OneDrive\Desktop\CloneProject\ProjectLibraryManage\ProjectLibraryManage\ProjectLibraryManage\App\obj\Debug\App.pdb
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\bin\Debug\App.exe.config
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\bin\Debug\App.exe
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\bin\Debug\App.pdb
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.csprojAssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.BangBaoCao.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.ChoMuonSach.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.TimSach.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.TraSach.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.RegisterForm.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.SignInForm.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.Properties.Resources.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.DocGia.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.SachMoi.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.UserForm.resources
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.csproj.GenerateResource.cache
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.csproj.CopyComplete
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.exe
+C:\Users\DELL\OneDrive\Desktop\ProjectLibraryManage\App\obj\Debug\App.pdb
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\bin\Debug\App.exe.config
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\bin\Debug\App.exe
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\bin\Debug\App.pdb
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.csprojAssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.BangBaoCao.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.ChoMuonSach.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.TimSach.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.TraSach.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.RegisterForm.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.Properties.Resources.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.DocGia.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.SachMoi.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.UserForm.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.csproj.GenerateResource.cache
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.csproj.CopyComplete
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.exe
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.pdb
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\bin\Debug\BUS.dll
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\bin\Debug\DTO.dll
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\bin\Debug\BUS.pdb
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\bin\Debug\DTO.pdb
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\bin\Debug\DAL.dll
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\bin\Debug\DAL.pdb
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.EditReaderForm.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.ThaydoiDocGia.resources
+C:\Users\DELL\OneDrive\Desktop\New folder\ProjectLibraryManage\App\obj\Debug\App.AllUserControls.ThaydoiPhieuMuon.resources
