@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Phần mềm quản lý thư viện
 ## 1.Tổng quan:
 - Đề tài: Phần mềm quản lý thư viên
@@ -23,8 +22,3 @@
    - Nhân viên có kiến thức cơ bản về sử dụng tin học văn phòng.
 ## 3.Phân tích đồ án:
 ## 4.Thiết kế:
-
-=======
-# ProjectLibraryManage
-using C# and SQL
->>>>>>> Update Stuff
