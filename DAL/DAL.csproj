@@ -44,7 +44,11 @@
   <ItemGroup>
     <Compile Include="DauSachDAL.cs" />
     <Compile Include="DocGiaDAL.cs" />
+    <Compile Include="MuonDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SachDAL.cs" />
+    <Compile Include="TacGiaDAL.cs" />
+    <Compile Include="TheLoaiDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">
