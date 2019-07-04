@@ -33,6 +33,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.AddBt = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.EditButton = new System.Windows.Forms.Button();
@@ -69,19 +72,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -90,6 +92,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -120,20 +123,50 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.AddBt);
-            this.panel4.Controls.Add(this.DeleteButton);
-            this.panel4.Controls.Add(this.EditButton);
-            this.panel4.Controls.Add(this.CancelAddBt);
-            this.panel4.Controls.Add(this.SaveAddBt);
-            this.panel4.Controls.Add(this.SaveEditButton);
-            this.panel4.Controls.Add(this.CancelEdit);
-            this.panel4.Controls.Add(this.groupBox2);
-            this.panel4.Controls.Add(this.groupBox1);
-            this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Location = new System.Drawing.Point(9, 26);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(890, 460);
             this.panel4.TabIndex = 31;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(16, 36);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(899, 469);
+            this.tabControl1.TabIndex = 32;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.AddBt);
+            this.tabPage1.Controls.Add(this.DeleteButton);
+            this.tabPage1.Controls.Add(this.EditButton);
+            this.tabPage1.Controls.Add(this.CancelAddBt);
+            this.tabPage1.Controls.Add(this.SaveAddBt);
+            this.tabPage1.Controls.Add(this.SaveEditButton);
+            this.tabPage1.Controls.Add(this.CancelEdit);
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(891, 443);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(891, 443);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // AddBt
             // 
@@ -141,10 +174,10 @@
             this.AddBt.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddBt.Image = ((System.Drawing.Image)(resources.GetObject("AddBt.Image")));
             this.AddBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddBt.Location = new System.Drawing.Point(345, 255);
+            this.AddBt.Location = new System.Drawing.Point(161, 340);
             this.AddBt.Name = "AddBt";
             this.AddBt.Size = new System.Drawing.Size(91, 41);
-            this.AddBt.TabIndex = 39;
+            this.AddBt.TabIndex = 49;
             this.AddBt.Text = "Thêm";
             this.AddBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.AddBt.UseVisualStyleBackColor = true;
@@ -155,10 +188,10 @@
             this.DeleteButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("DeleteButton.Image")));
             this.DeleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DeleteButton.Location = new System.Drawing.Point(743, 255);
+            this.DeleteButton.Location = new System.Drawing.Point(781, 340);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(91, 41);
-            this.DeleteButton.TabIndex = 41;
+            this.DeleteButton.TabIndex = 51;
             this.DeleteButton.Text = "Xóa";
             this.DeleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -169,10 +202,10 @@
             this.EditButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditButton.Image = ((System.Drawing.Image)(resources.GetObject("EditButton.Image")));
             this.EditButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EditButton.Location = new System.Drawing.Point(549, 255);
+            this.EditButton.Location = new System.Drawing.Point(518, 340);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(91, 41);
-            this.EditButton.TabIndex = 40;
+            this.EditButton.TabIndex = 50;
             this.EditButton.Text = "Sửa";
             this.EditButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EditButton.UseVisualStyleBackColor = true;
@@ -183,10 +216,10 @@
             this.CancelAddBt.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelAddBt.Image = ((System.Drawing.Image)(resources.GetObject("CancelAddBt.Image")));
             this.CancelAddBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CancelAddBt.Location = new System.Drawing.Point(644, 255);
+            this.CancelAddBt.Location = new System.Drawing.Point(644, 340);
             this.CancelAddBt.Name = "CancelAddBt";
             this.CancelAddBt.Size = new System.Drawing.Size(91, 41);
-            this.CancelAddBt.TabIndex = 42;
+            this.CancelAddBt.TabIndex = 52;
             this.CancelAddBt.Text = "Hủy";
             this.CancelAddBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CancelAddBt.UseVisualStyleBackColor = true;
@@ -197,10 +230,10 @@
             this.SaveAddBt.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveAddBt.Image = ((System.Drawing.Image)(resources.GetObject("SaveAddBt.Image")));
             this.SaveAddBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveAddBt.Location = new System.Drawing.Point(454, 255);
+            this.SaveAddBt.Location = new System.Drawing.Point(316, 340);
             this.SaveAddBt.Name = "SaveAddBt";
             this.SaveAddBt.Size = new System.Drawing.Size(91, 41);
-            this.SaveAddBt.TabIndex = 44;
+            this.SaveAddBt.TabIndex = 54;
             this.SaveAddBt.Text = "Lưu";
             this.SaveAddBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SaveAddBt.UseVisualStyleBackColor = true;
@@ -211,10 +244,10 @@
             this.SaveEditButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveEditButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveEditButton.Image")));
             this.SaveEditButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveEditButton.Location = new System.Drawing.Point(454, 255);
+            this.SaveEditButton.Location = new System.Drawing.Point(385, 277);
             this.SaveEditButton.Name = "SaveEditButton";
             this.SaveEditButton.Size = new System.Drawing.Size(91, 41);
-            this.SaveEditButton.TabIndex = 45;
+            this.SaveEditButton.TabIndex = 55;
             this.SaveEditButton.Text = "Lưu";
             this.SaveEditButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SaveEditButton.UseVisualStyleBackColor = true;
@@ -225,10 +258,10 @@
             this.CancelEdit.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelEdit.Image = ((System.Drawing.Image)(resources.GetObject("CancelEdit.Image")));
             this.CancelEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CancelEdit.Location = new System.Drawing.Point(644, 255);
+            this.CancelEdit.Location = new System.Drawing.Point(644, 277);
             this.CancelEdit.Name = "CancelEdit";
             this.CancelEdit.Size = new System.Drawing.Size(91, 41);
-            this.CancelEdit.TabIndex = 43;
+            this.CancelEdit.TabIndex = 53;
             this.CancelEdit.Text = "Hủy";
             this.CancelEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CancelEdit.UseVisualStyleBackColor = true;
@@ -260,10 +293,10 @@
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(282, 20);
+            this.groupBox2.Location = new System.Drawing.Point(282, 11);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(590, 233);
-            this.groupBox2.TabIndex = 35;
+            this.groupBox2.TabIndex = 47;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin Phiếu Mượn Sách";
             // 
@@ -521,20 +554,17 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label24);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(10, 20);
+            this.groupBox1.Location = new System.Drawing.Point(10, 11);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(242, 233);
-            this.groupBox1.TabIndex = 35;
+            this.groupBox1.TabIndex = 48;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Sách";
             // 
@@ -564,15 +594,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 2);
             this.label2.TabIndex = 56;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(13, 58);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 2);
-            this.label7.TabIndex = 56;
             // 
             // label5
             // 
@@ -607,17 +628,6 @@
             this.label1.Text = "Tên Sách:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label24
-            // 
-            this.label24.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(9, 36);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(89, 23);
-            this.label24.TabIndex = 53;
-            this.label24.Text = "Mã Sách:";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // textBox4
             // 
             this.textBox4.Enabled = false;
@@ -648,25 +658,15 @@
             this.textBox2.Size = new System.Drawing.Size(135, 31);
             this.textBox2.TabIndex = 51;
             // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(101, 34);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 31);
-            this.textBox1.TabIndex = 51;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 300);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 18);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(888, 158);
-            this.dataGridView1.TabIndex = 34;
+            this.dataGridView1.Size = new System.Drawing.Size(885, 422);
+            this.dataGridView1.TabIndex = 47;
             // 
             // ChoMuonSach
             // 
@@ -677,8 +677,10 @@
             this.Size = new System.Drawing.Size(922, 510);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -694,32 +696,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button AddBt;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button EditButton;
@@ -727,18 +705,42 @@
         private System.Windows.Forms.Button SaveAddBt;
         private System.Windows.Forms.Button SaveEditButton;
         private System.Windows.Forms.Button CancelEdit;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -15,6 +15,6 @@ namespace App.AllUserControls
         public ThaydoiDocGia()
         {
             InitializeComponent();
-        }
+        }       
     }
 }

@@ -10,14 +10,14 @@ namespace DTO
     {
         private int madausach;
         private int matuasach;
-        private char nxb;
-        private char namxb;
+        private string nxb;
+        private string namxb;
         private float trigia;
 
         public int Madausach { get => madausach; set => madausach = value; }
         public int Matuasach { get => matuasach; set => matuasach = value; }
-        public char Nxb { get => nxb; set => nxb = value; }
-        public char Namxb { get => namxb; set => namxb = value; }
+        public string Nxb { get => nxb; set => nxb = value; }
+        public string Namxb { get => namxb; set => namxb = value; }
         public float Trigia { get => trigia; set => trigia = value; }
     }
 }

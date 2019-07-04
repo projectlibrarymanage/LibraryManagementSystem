@@ -27,14 +27,6 @@ namespace App
             Application.Exit();
         }
 
-        private void MaxAndMin_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
-        }
-
         private void HideBt_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -76,7 +68,7 @@ namespace App
             ThayDoiTimer.Stop();
             DocGiaTimer.Start();
             DocGia uc = new DocGia();
-            panel2.Controls.Add(uc);
+            panel2.Controls.Add(uc);            
             uc.BringToFront();
             uc.Dock = DockStyle.Fill;            
         }
@@ -177,7 +169,7 @@ namespace App
         {
             if (!isCollapsed || isCollapsed2 || !isCollapsed3 || !isCollapsed4)
             {
-                panel1.Height -= 10;
+                panel1.Height -= 20;
                 if (panel1.Size == panel1.MinimumSize)
                 {
                     isCollapsed = true;
@@ -224,7 +216,7 @@ namespace App
         {
             if (!isCollapsed || !isCollapsed2 || isCollapsed3 || !isCollapsed4)
             {
-                panel1.Height -= 10;
+                panel1.Height -= 20;
                 if (panel1.Size == panel1.MinimumSize)
                 {                    
                     isCollapsed = true;
@@ -271,7 +263,7 @@ namespace App
         {
             if (!isCollapsed || !isCollapsed2 || !isCollapsed3 || isCollapsed4)
             {
-                panel1.Height -= 10;
+                panel1.Height -= 20;
                 if (panel1.Size == panel1.MinimumSize)
                 {
                     isCollapsed = true;
@@ -385,6 +377,15 @@ namespace App
             panel2.Controls.Add(uc7);
             uc7.BringToFront();
             uc7.Dock = DockStyle.Fill;
+        }       
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            BangThongKe uc8 = new BangThongKe();
+            panel2.Controls.Add(uc8);
+            uc8.BringToFront();
+            uc8.Dock = DockStyle.Fill;
+
         }
 
         private void TrangChuBt_Click(object sender, EventArgs e)
@@ -397,9 +398,6 @@ namespace App
             DocGiaTimer.Start();
         }        
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }        
+             
     }
 }
