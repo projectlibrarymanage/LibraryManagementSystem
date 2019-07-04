@@ -49,6 +49,7 @@
     <Compile Include="SachBUS.cs" />
     <Compile Include="TacGiaBUS.cs" />
     <Compile Include="TheLoaiBUS.cs" />
+    <Compile Include="TuaSachBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

@@ -122,5 +122,70 @@ namespace DAL
             }
             return true;
         }
+
+        public bool kiemtra(string tuasach)
+        {
+            DataTable dataTable = new DataTable();
+            string query = "select * from TuaSach.TuaSach = @tuasach";
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@tuasach", tuasach);                    
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        // this will query your database and return the result to your datatable
+                        da.Fill(dataTable);
+                        con.Close();
+                        con.Dispose();
+                    } 
+                    catch (Exception ex)
+                    {
+                        con.Close();                       
+                    }
+                }
+            }
+            if (dataTable.Rows.Count == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        public int soluongtuasach()
+        {
+            DataTable dataTable = new DataTable();
+            string query = "select * from TuaSach";
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;                    
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        // this will query your database and return the result to your datatable
+                        da.Fill(dataTable);
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                    }
+                }
+            }
+            int soluongtuasach = dataTable.Rows.Count;
+            return soluongtuasach;
+        }
     }
 }

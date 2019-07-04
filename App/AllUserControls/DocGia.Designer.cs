@@ -39,6 +39,7 @@
             this.label37 = new System.Windows.Forms.Label();
             this.AddReaderBt = new System.Windows.Forms.Button();
             this.ChoseBackBt = new System.Windows.Forms.Button();
+            this.DetailBt = new App.CircleButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -72,6 +73,7 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.circleButton2 = new App.CircleButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -117,8 +119,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.DetailBt = new App.CircleButton();
-            this.circleButton2 = new App.CircleButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -151,9 +151,9 @@
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.circleButton2);
-            this.panel3.Location = new System.Drawing.Point(7, 6);
+            this.panel3.Location = new System.Drawing.Point(6, 8);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(908, 495);
+            this.panel3.Size = new System.Drawing.Size(908, 493);
             this.panel3.TabIndex = 2;
             // 
             // panel8
@@ -162,9 +162,9 @@
             this.panel8.Controls.Add(this.bunifuTileButton1);
             this.panel8.Controls.Add(this.label38);
             this.panel8.Controls.Add(this.label37);
-            this.panel8.Location = new System.Drawing.Point(1, 466);
+            this.panel8.Location = new System.Drawing.Point(1, 455);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(907, 36);
+            this.panel8.Size = new System.Drawing.Size(907, 47);
             this.panel8.TabIndex = 37;
             // 
             // bunifuTileButton2
@@ -238,7 +238,7 @@
             this.AddReaderBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddReaderBt.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddReaderBt.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.AddReaderBt.Location = new System.Drawing.Point(329, 419);
+            this.AddReaderBt.Location = new System.Drawing.Point(324, 419);
             this.AddReaderBt.Name = "AddReaderBt";
             this.AddReaderBt.Size = new System.Drawing.Size(224, 59);
             this.AddReaderBt.TabIndex = 36;
@@ -249,7 +249,7 @@
             // ChoseBackBt
             // 
             this.ChoseBackBt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChoseBackBt.Location = new System.Drawing.Point(153, 430);
+            this.ChoseBackBt.Location = new System.Drawing.Point(148, 430);
             this.ChoseBackBt.Name = "ChoseBackBt";
             this.ChoseBackBt.Size = new System.Drawing.Size(110, 40);
             this.ChoseBackBt.TabIndex = 0;
@@ -257,11 +257,26 @@
             this.ChoseBackBt.UseVisualStyleBackColor = true;
             this.ChoseBackBt.Click += new System.EventHandler(this.ChoseBackBt_Click);
             // 
+            // DetailBt
+            // 
+            this.DetailBt.BackColor = System.Drawing.Color.White;
+            this.DetailBt.FlatAppearance.BorderSize = 0;
+            this.DetailBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DetailBt.Font = new System.Drawing.Font("Tahoma", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DetailBt.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.DetailBt.Location = new System.Drawing.Point(635, 422);
+            this.DetailBt.Name = "DetailBt";
+            this.DetailBt.Size = new System.Drawing.Size(141, 56);
+            this.DetailBt.TabIndex = 34;
+            this.DetailBt.Text = "     Chi Tiết       Bảng Độc Giả";
+            this.DetailBt.UseVisualStyleBackColor = false;
+            this.DetailBt.Click += new System.EventHandler(this.DetailBt_Click);
+            // 
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.label9.Location = new System.Drawing.Point(58, 11);
+            this.label9.Location = new System.Drawing.Point(53, 11);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(158, 40);
             this.label9.TabIndex = 3;
@@ -271,7 +286,7 @@
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.label8.Location = new System.Drawing.Point(328, 414);
+            this.label8.Location = new System.Drawing.Point(323, 414);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(232, 65);
             this.label8.TabIndex = 1;
@@ -309,7 +324,7 @@
             this.panel4.Controls.Add(this.dateTimePicker3);
             this.panel4.Controls.Add(this.dateTimePicker2);
             this.panel4.Controls.Add(this.dateTimePicker1);
-            this.panel4.Location = new System.Drawing.Point(51, 36);
+            this.panel4.Location = new System.Drawing.Point(46, 36);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(818, 359);
             this.panel4.TabIndex = 31;
@@ -619,6 +634,17 @@
             this.dateTimePicker1.TabIndex = 24;
             this.dateTimePicker1.Value = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // circleButton2
+            // 
+            this.circleButton2.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.circleButton2.FlatAppearance.BorderSize = 0;
+            this.circleButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circleButton2.Location = new System.Drawing.Point(631, 419);
+            this.circleButton2.Name = "circleButton2";
+            this.circleButton2.Size = new System.Drawing.Size(149, 62);
+            this.circleButton2.TabIndex = 35;
+            this.circleButton2.UseVisualStyleBackColor = false;
             // 
             // radioButton6
             // 
@@ -1146,32 +1172,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // DetailBt
-            // 
-            this.DetailBt.BackColor = System.Drawing.Color.White;
-            this.DetailBt.FlatAppearance.BorderSize = 0;
-            this.DetailBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DetailBt.Font = new System.Drawing.Font("Tahoma", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DetailBt.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.DetailBt.Location = new System.Drawing.Point(640, 422);
-            this.DetailBt.Name = "DetailBt";
-            this.DetailBt.Size = new System.Drawing.Size(141, 56);
-            this.DetailBt.TabIndex = 34;
-            this.DetailBt.Text = "     Chi Tiết       Bảng Độc Giả";
-            this.DetailBt.UseVisualStyleBackColor = false;
-            this.DetailBt.Click += new System.EventHandler(this.DetailBt_Click);
-            // 
-            // circleButton2
-            // 
-            this.circleButton2.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.circleButton2.FlatAppearance.BorderSize = 0;
-            this.circleButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circleButton2.Location = new System.Drawing.Point(636, 419);
-            this.circleButton2.Name = "circleButton2";
-            this.circleButton2.Size = new System.Drawing.Size(149, 62);
-            this.circleButton2.TabIndex = 35;
-            this.circleButton2.UseVisualStyleBackColor = false;
-            // 
             // DocGia
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1179,7 +1179,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "DocGia";
-            this.Size = new System.Drawing.Size(922, 1057);
+            this.Size = new System.Drawing.Size(922, 1090);
             this.Load += new System.EventHandler(this.DocGia_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
