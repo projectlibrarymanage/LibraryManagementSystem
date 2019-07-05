@@ -20,3 +20,14 @@ C:\Users\Administrator\Desktop\phục\LibraryManagementSystem\BUS\obj\Debug\BUS.
 C:\Users\Administrator\Desktop\phục\LibraryManagementSystem\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Administrator\Desktop\phục\LibraryManagementSystem\BUS\obj\Debug\BUS.dll
 C:\Users\Administrator\Desktop\phục\LibraryManagementSystem\BUS\obj\Debug\BUS.pdb
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\bin\Debug\BUS.dll
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\bin\Debug\BUS.pdb
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\bin\Debug\DAL.dll
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\bin\Debug\DTO.dll
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\bin\Debug\DAL.pdb
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\bin\Debug\DTO.pdb
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\obj\Debug\BUS.dll
+C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\obj\Debug\BUS.pdb

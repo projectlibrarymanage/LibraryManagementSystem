@@ -57,6 +57,12 @@
     <Compile Include="AllUserControls\BangBaoCao.Designer.cs">
       <DependentUpon>BangBaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllUserControls\BangThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControls\BangThongKe.Designer.cs">
+      <DependentUpon>BangThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllUserControls\ChoMuonSach.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </Compile>
     <EmbeddedResource Include="AllUserControls\BangBaoCao.resx">
       <DependentUpon>BangBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControls\BangThongKe.resx">
+      <DependentUpon>BangThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControls\ChoMuonSach.resx">
       <DependentUpon>ChoMuonSach.cs</DependentUpon>

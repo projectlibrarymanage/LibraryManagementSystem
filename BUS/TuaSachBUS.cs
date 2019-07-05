@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace BUS
 {
-    class TuaSachBUS
+    public class TuaSachBUS
     {
         private TuaSachDAL TsDAL;
         public TuaSachBUS()
@@ -31,6 +31,17 @@ namespace BUS
         {
             bool re = TsDAL.Sua(kn);
             return re;
+        }
+
+        public bool kiemtra(string tuasach)
+        {
+            bool re = TsDAL.kiemtra(tuasach);
+            return re;
+        }
+        public int soluong()
+        {
+            int sl = TsDAL.soluongtuasach();
+            return sl;
         }
     }
 }
