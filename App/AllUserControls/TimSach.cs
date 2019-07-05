@@ -7,17 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
 
 namespace App.AllUserControls
 {
     public partial class TimSach : UserControl
     {
+        TuaSachBUS tuaSach = new TuaSachBUS();
+        DauSachBUS DauSach = new DauSachBUS();
         public TimSach()
         {
             InitializeComponent();
            
         }
-        
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            if (tensach_radiobt.Checked == true)
+            {
+                tuaSach.getdata(danhsach_data, info.Text);
+            }
+            if (tacgia.Checked==true)
+            {
+                DauSach.gettacgia(danhsach_data, info.Text);
+            }
+            if (tacgia.Checked == true)
+            {
+                DauSach.gettheloai(danhsach_data, info.Text);
+            }
+        }
+
 
         //int delta = 9, min, max;
 

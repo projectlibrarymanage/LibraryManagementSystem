@@ -42,7 +42,7 @@ namespace DAL
                     cmd.CommandText = query;
                     cmd.Parameters.AddWithValue("@Matheloai", add.Matheloai);
                     cmd.Parameters.AddWithValue("@Tentheloai", add.Matheloai);
-                    
+
                     try
                     {
                         con.Open();
@@ -118,6 +118,43 @@ namespace DAL
                 }
             }
             return true;
-        }       
+        }
+        public int GetMaTheLoai(string tenheloai)
+        {
+            int matheloai = new int();
+            string query = string.Empty;
+            query = "select TheLoai.MaTheLoai from TheLoai where TheLoai.TenTheLoai = N@matheloai";
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@matheloai", tenheloai);
+
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        SqlDataAdapter dataAdapter = new SqlDataAdapter(query, con); //c.con is the connection string
+                        SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+                        DataTable table = new DataTable();
+                        table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+                        object a = table.Rows[0]["MaTheLoai"];
+                        matheloai = Convert.ToInt32(a);
+                        dataAdapter.Fill(table);
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                    }
+                }
+                return matheloai;
+            }
+        }
     }
 }

@@ -30,402 +30,334 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SachMoi));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.AddBt = new System.Windows.Forms.Button();
-            this.DeleteButton = new System.Windows.Forms.Button();
-            this.EditButton = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.CancelAddBt = new System.Windows.Forms.Button();
-            this.SaveAddBt = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.SaveEditButton = new System.Windows.Forms.Button();
-            this.CancelEdit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.Tensach_tb = new System.Windows.Forms.TextBox();
-            this.gia_tb = new System.Windows.Forms.TextBox();
-            this.namxb_tb = new System.Windows.Forms.TextBox();
-            this.nxb_tb = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.TS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NAMXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NHAXUATBATN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TriGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            this.Themsach_pn = new System.Windows.Forms.Panel();
+            this.tacgia_cb = new System.Windows.Forms.ComboBox();
+            this.theloai_cb = new System.Windows.Forms.ComboBox();
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Them_bt = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ngaynhap = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.trigia_tb = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.namxb_tb = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.nxb_tb = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.tensach_tb = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.ngaythem_lb = new System.Windows.Forms.Label();
+            this.trigia_lb = new System.Windows.Forms.Label();
+            this.tacgia_lb = new System.Windows.Forms.Label();
+            this.theloai_lb = new System.Windows.Forms.Label();
+            this.namxb_lb = new System.Windows.Forms.Label();
+            this.Nxb_lb = new System.Windows.Forms.Label();
+            this.tensach_lb = new System.Windows.Forms.Label();
+            this.Ten = new System.Windows.Forms.Label();
+            this.sl_lb = new System.Windows.Forms.Label();
+            this.soluong_tb = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.Themsach_pn.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // Themsach_pn
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel2.Controls.Add(this.AddBt);
-            this.panel2.Controls.Add(this.DeleteButton);
-            this.panel2.Controls.Add(this.EditButton);
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.CancelAddBt);
-            this.panel2.Controls.Add(this.SaveAddBt);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.SaveEditButton);
-            this.panel2.Controls.Add(this.CancelEdit);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(922, 508);
-            this.panel2.TabIndex = 3;
+            this.Themsach_pn.BackColor = System.Drawing.Color.SeaGreen;
+            this.Themsach_pn.Controls.Add(this.sl_lb);
+            this.Themsach_pn.Controls.Add(this.tacgia_cb);
+            this.Themsach_pn.Controls.Add(this.theloai_cb);
+            this.Themsach_pn.Controls.Add(this.bunifuSeparator1);
+            this.Themsach_pn.Controls.Add(this.Them_bt);
+            this.Themsach_pn.Controls.Add(this.ngaynhap);
+            this.Themsach_pn.Controls.Add(this.trigia_tb);
+            this.Themsach_pn.Controls.Add(this.namxb_tb);
+            this.Themsach_pn.Controls.Add(this.nxb_tb);
+            this.Themsach_pn.Controls.Add(this.tensach_tb);
+            this.Themsach_pn.Controls.Add(this.ngaythem_lb);
+            this.Themsach_pn.Controls.Add(this.trigia_lb);
+            this.Themsach_pn.Controls.Add(this.tacgia_lb);
+            this.Themsach_pn.Controls.Add(this.theloai_lb);
+            this.Themsach_pn.Controls.Add(this.namxb_lb);
+            this.Themsach_pn.Controls.Add(this.Nxb_lb);
+            this.Themsach_pn.Controls.Add(this.tensach_lb);
+            this.Themsach_pn.Controls.Add(this.Ten);
+            this.Themsach_pn.Controls.Add(this.soluong_tb);
+            this.Themsach_pn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Themsach_pn.Location = new System.Drawing.Point(0, 0);
+            this.Themsach_pn.Name = "Themsach_pn";
+            this.Themsach_pn.Size = new System.Drawing.Size(922, 509);
+            this.Themsach_pn.TabIndex = 0;
             // 
-            // AddBt
+            // tacgia_cb
             // 
-            this.AddBt.AutoSize = true;
-            this.AddBt.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddBt.Image = ((System.Drawing.Image)(resources.GetObject("AddBt.Image")));
-            this.AddBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddBt.Location = new System.Drawing.Point(597, 21);
-            this.AddBt.Name = "AddBt";
-            this.AddBt.Size = new System.Drawing.Size(91, 41);
-            this.AddBt.TabIndex = 34;
-            this.AddBt.Text = "Thêm";
-            this.AddBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AddBt.UseVisualStyleBackColor = true;
+            this.tacgia_cb.FormattingEnabled = true;
+            this.tacgia_cb.Items.AddRange(new object[] {
+            "Xuân Diệu",
+            "Phạm Vân Anh",
+            "Phạm Ánh",
+            "Mai Tú Ân",
+            "Phạm Thái Ba",
+            "Nguyễn Kim Bang",
+            "Trọng Bảo",
+            "Nguyễn Vĩnh Bảo"});
+            this.tacgia_cb.Location = new System.Drawing.Point(567, 197);
+            this.tacgia_cb.Name = "tacgia_cb";
+            this.tacgia_cb.Size = new System.Drawing.Size(172, 21);
+            this.tacgia_cb.TabIndex = 19;
             // 
-            // DeleteButton
+            // theloai_cb
             // 
-            this.DeleteButton.AutoSize = true;
-            this.DeleteButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("DeleteButton.Image")));
-            this.DeleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DeleteButton.Location = new System.Drawing.Point(824, 21);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(91, 41);
-            this.DeleteButton.TabIndex = 35;
-            this.DeleteButton.Text = "Xóa";
-            this.DeleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.theloai_cb.FormattingEnabled = true;
+            this.theloai_cb.Items.AddRange(new object[] {
+            "Giáo dục",
+            "Khoa học",
+            "Kinh tế xã hội"});
+            this.theloai_cb.Location = new System.Drawing.Point(567, 137);
+            this.theloai_cb.Name = "theloai_cb";
+            this.theloai_cb.Size = new System.Drawing.Size(172, 21);
+            this.theloai_cb.TabIndex = 18;
             // 
-            // EditButton
+            // bunifuSeparator1
             // 
-            this.EditButton.AutoSize = true;
-            this.EditButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditButton.Image = ((System.Drawing.Image)(resources.GetObject("EditButton.Image")));
-            this.EditButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EditButton.Location = new System.Drawing.Point(723, 21);
-            this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(91, 41);
-            this.EditButton.TabIndex = 34;
-            this.EditButton.Text = "Sửa";
-            this.EditButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.EditButton.UseVisualStyleBackColor = true;
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(45, 71);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(810, 10);
+            this.bunifuSeparator1.TabIndex = 17;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
             // 
-            // panel6
+            // Them_bt
             // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.bunifuDatepicker1);
-            this.panel6.Controls.Add(this.comboBox2);
-            this.panel6.Controls.Add(this.comboBox1);
-            this.panel6.Controls.Add(this.nxb_tb);
-            this.panel6.Controls.Add(this.namxb_tb);
-            this.panel6.Controls.Add(this.gia_tb);
-            this.panel6.Controls.Add(this.Tensach_tb);
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Controls.Add(this.label1);
-            this.panel6.Location = new System.Drawing.Point(605, 80);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(310, 407);
-            this.panel6.TabIndex = 42;
+            this.Them_bt.ActiveBorderThickness = 1;
+            this.Them_bt.ActiveCornerRadius = 5;
+            this.Them_bt.ActiveFillColor = System.Drawing.SystemColors.ControlDark;
+            this.Them_bt.ActiveForecolor = System.Drawing.Color.White;
+            this.Them_bt.ActiveLineColor = System.Drawing.SystemColors.ControlDark;
+            this.Them_bt.BackColor = System.Drawing.Color.SeaGreen;
+            this.Them_bt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Them_bt.BackgroundImage")));
+            this.Them_bt.ButtonText = "Thêm sách";
+            this.Them_bt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Them_bt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Them_bt.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Them_bt.IdleBorderThickness = 1;
+            this.Them_bt.IdleCornerRadius = 5;
+            this.Them_bt.IdleFillColor = System.Drawing.Color.White;
+            this.Them_bt.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.Them_bt.IdleLineColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Them_bt.Location = new System.Drawing.Point(375, 421);
+            this.Them_bt.Margin = new System.Windows.Forms.Padding(5);
+            this.Them_bt.Name = "Them_bt";
+            this.Them_bt.Size = new System.Drawing.Size(200, 58);
+            this.Them_bt.TabIndex = 15;
+            this.Them_bt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Them_bt.Click += new System.EventHandler(this.Them_bt_Click_1);
             // 
-            // CancelAddBt
+            // ngaynhap
             // 
-            this.CancelAddBt.AutoSize = true;
-            this.CancelAddBt.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelAddBt.Image = ((System.Drawing.Image)(resources.GetObject("CancelAddBt.Image")));
-            this.CancelAddBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CancelAddBt.Location = new System.Drawing.Point(794, 21);
-            this.CancelAddBt.Name = "CancelAddBt";
-            this.CancelAddBt.Size = new System.Drawing.Size(91, 41);
-            this.CancelAddBt.TabIndex = 37;
-            this.CancelAddBt.Text = "Hủy";
-            this.CancelAddBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CancelAddBt.UseVisualStyleBackColor = true;
+            this.ngaynhap.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ngaynhap.BorderRadius = 0;
+            this.ngaynhap.ForeColor = System.Drawing.Color.Black;
+            this.ngaynhap.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.ngaynhap.FormatCustom = null;
+            this.ngaynhap.Location = new System.Drawing.Point(190, 315);
+            this.ngaynhap.Name = "ngaynhap";
+            this.ngaynhap.Size = new System.Drawing.Size(209, 36);
+            this.ngaynhap.TabIndex = 14;
+            this.ngaynhap.Value = new System.DateTime(2019, 7, 5, 9, 33, 24, 93);
             // 
-            // SaveAddBt
+            // trigia_tb
             // 
-            this.SaveAddBt.AutoSize = true;
-            this.SaveAddBt.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveAddBt.Image = ((System.Drawing.Image)(resources.GetObject("SaveAddBt.Image")));
-            this.SaveAddBt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveAddBt.Location = new System.Drawing.Point(670, 21);
-            this.SaveAddBt.Name = "SaveAddBt";
-            this.SaveAddBt.Size = new System.Drawing.Size(91, 41);
-            this.SaveAddBt.TabIndex = 38;
-            this.SaveAddBt.Text = "Lưu";
-            this.SaveAddBt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SaveAddBt.UseVisualStyleBackColor = true;
-            this.SaveAddBt.Click += new System.EventHandler(this.SaveAddBt_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.bunifuCustomDataGrid1);
-            this.panel5.Location = new System.Drawing.Point(7, 21);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(587, 466);
-            this.panel5.TabIndex = 40;
-            // 
-            // SaveEditButton
-            // 
-            this.SaveEditButton.AutoSize = true;
-            this.SaveEditButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveEditButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveEditButton.Image")));
-            this.SaveEditButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveEditButton.Location = new System.Drawing.Point(670, 21);
-            this.SaveEditButton.Name = "SaveEditButton";
-            this.SaveEditButton.Size = new System.Drawing.Size(91, 41);
-            this.SaveEditButton.TabIndex = 38;
-            this.SaveEditButton.Text = "Lưu";
-            this.SaveEditButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SaveEditButton.UseVisualStyleBackColor = true;
-            // 
-            // CancelEdit
-            // 
-            this.CancelEdit.AutoSize = true;
-            this.CancelEdit.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelEdit.Image = ((System.Drawing.Image)(resources.GetObject("CancelEdit.Image")));
-            this.CancelEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CancelEdit.Location = new System.Drawing.Point(794, 21);
-            this.CancelEdit.Name = "CancelEdit";
-            this.CancelEdit.Size = new System.Drawing.Size(91, 41);
-            this.CancelEdit.TabIndex = 37;
-            this.CancelEdit.Text = "Hủy";
-            this.CancelEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CancelEdit.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(28, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tên Sách";
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(28, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Thể Loại:";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(28, 122);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tác Giả:";
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(28, 162);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Năm Xuất Bản:";
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(28, 207);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Nhà Xuất Bản:";
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(28, 260);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 23);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Ngày Nhập:";
-            // 
-            // label7
-            // 
-            this.label7.Location = new System.Drawing.Point(28, 301);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 27);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Trị Giá:";
-            // 
-            // Tensach_tb
-            // 
-            this.Tensach_tb.Location = new System.Drawing.Point(109, 30);
-            this.Tensach_tb.Name = "Tensach_tb";
-            this.Tensach_tb.Size = new System.Drawing.Size(100, 20);
-            this.Tensach_tb.TabIndex = 7;
-            // 
-            // gia_tb
-            // 
-            this.gia_tb.Location = new System.Drawing.Point(109, 301);
-            this.gia_tb.Name = "gia_tb";
-            this.gia_tb.Size = new System.Drawing.Size(100, 20);
-            this.gia_tb.TabIndex = 9;
+            this.trigia_tb.BorderColorFocused = System.Drawing.SystemColors.ButtonFace;
+            this.trigia_tb.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.trigia_tb.BorderColorMouseHover = System.Drawing.SystemColors.ButtonFace;
+            this.trigia_tb.BorderThickness = 3;
+            this.trigia_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.trigia_tb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.trigia_tb.ForeColor = System.Drawing.Color.White;
+            this.trigia_tb.isPassword = false;
+            this.trigia_tb.Location = new System.Drawing.Point(567, 247);
+            this.trigia_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.trigia_tb.Name = "trigia_tb";
+            this.trigia_tb.Size = new System.Drawing.Size(250, 37);
+            this.trigia_tb.TabIndex = 13;
+            this.trigia_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // namxb_tb
             // 
-            this.namxb_tb.Location = new System.Drawing.Point(109, 162);
+            this.namxb_tb.BorderColorFocused = System.Drawing.SystemColors.ButtonFace;
+            this.namxb_tb.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.namxb_tb.BorderColorMouseHover = System.Drawing.SystemColors.ButtonFace;
+            this.namxb_tb.BorderThickness = 3;
+            this.namxb_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.namxb_tb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.namxb_tb.ForeColor = System.Drawing.Color.White;
+            this.namxb_tb.isPassword = false;
+            this.namxb_tb.Location = new System.Drawing.Point(190, 247);
+            this.namxb_tb.Margin = new System.Windows.Forms.Padding(4);
             this.namxb_tb.Name = "namxb_tb";
-            this.namxb_tb.Size = new System.Drawing.Size(100, 20);
+            this.namxb_tb.Size = new System.Drawing.Size(250, 37);
             this.namxb_tb.TabIndex = 10;
+            this.namxb_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // nxb_tb
             // 
-            this.nxb_tb.Location = new System.Drawing.Point(109, 204);
+            this.nxb_tb.BorderColorFocused = System.Drawing.SystemColors.ButtonFace;
+            this.nxb_tb.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.nxb_tb.BorderColorMouseHover = System.Drawing.SystemColors.ButtonFace;
+            this.nxb_tb.BorderThickness = 3;
+            this.nxb_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nxb_tb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.nxb_tb.ForeColor = System.Drawing.Color.White;
+            this.nxb_tb.isPassword = false;
+            this.nxb_tb.Location = new System.Drawing.Point(190, 187);
+            this.nxb_tb.Margin = new System.Windows.Forms.Padding(4);
             this.nxb_tb.Name = "nxb_tb";
-            this.nxb_tb.Size = new System.Drawing.Size(100, 20);
-            this.nxb_tb.TabIndex = 12;
+            this.nxb_tb.Size = new System.Drawing.Size(250, 37);
+            this.nxb_tb.TabIndex = 9;
+            this.nxb_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // comboBox1
+            // tensach_tb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(109, 73);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 13;
+            this.tensach_tb.BorderColorFocused = System.Drawing.SystemColors.ButtonFace;
+            this.tensach_tb.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tensach_tb.BorderColorMouseHover = System.Drawing.SystemColors.ButtonFace;
+            this.tensach_tb.BorderThickness = 3;
+            this.tensach_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tensach_tb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tensach_tb.ForeColor = System.Drawing.Color.White;
+            this.tensach_tb.isPassword = false;
+            this.tensach_tb.Location = new System.Drawing.Point(190, 131);
+            this.tensach_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.tensach_tb.Name = "tensach_tb";
+            this.tensach_tb.Size = new System.Drawing.Size(250, 37);
+            this.tensach_tb.TabIndex = 8;
+            this.tensach_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // comboBox2
+            // ngaythem_lb
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(109, 122);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 13;
+            this.ngaythem_lb.AutoSize = true;
+            this.ngaythem_lb.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngaythem_lb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ngaythem_lb.Location = new System.Drawing.Point(73, 324);
+            this.ngaythem_lb.Name = "ngaythem_lb";
+            this.ngaythem_lb.Size = new System.Drawing.Size(86, 16);
+            this.ngaythem_lb.TabIndex = 7;
+            this.ngaythem_lb.Text = "Ngày nhập:";
             // 
-            // bunifuDatepicker1
+            // trigia_lb
             // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(109, 249);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(159, 34);
-            this.bunifuDatepicker1.TabIndex = 15;
-            this.bunifuDatepicker1.Value = new System.DateTime(2019, 7, 4, 19, 15, 12, 650);
+            this.trigia_lb.AutoSize = true;
+            this.trigia_lb.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trigia_lb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.trigia_lb.Location = new System.Drawing.Point(478, 258);
+            this.trigia_lb.Name = "trigia_lb";
+            this.trigia_lb.Size = new System.Drawing.Size(53, 16);
+            this.trigia_lb.TabIndex = 6;
+            this.trigia_lb.Text = "Trị giá:";
             // 
-            // bunifuCustomDataGrid1
+            // tacgia_lb
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.TS,
-            this.TL,
-            this.TG,
-            this.NAMXB,
-            this.NHAXUATBATN,
-            this.NgayNhap,
-            this.TriGia});
-            this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.ReadOnly = true;
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(587, 466);
-            this.bunifuCustomDataGrid1.TabIndex = 0;
+            this.tacgia_lb.AutoSize = true;
+            this.tacgia_lb.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tacgia_lb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tacgia_lb.Location = new System.Drawing.Point(478, 198);
+            this.tacgia_lb.Name = "tacgia_lb";
+            this.tacgia_lb.Size = new System.Drawing.Size(61, 16);
+            this.tacgia_lb.TabIndex = 5;
+            this.tacgia_lb.Text = "Tác giả:";
             // 
-            // TS
+            // theloai_lb
             // 
-            this.TS.HeaderText = "Tên Sách";
-            this.TS.Name = "TS";
-            this.TS.ReadOnly = true;
+            this.theloai_lb.AutoSize = true;
+            this.theloai_lb.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.theloai_lb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.theloai_lb.Location = new System.Drawing.Point(478, 142);
+            this.theloai_lb.Name = "theloai_lb";
+            this.theloai_lb.Size = new System.Drawing.Size(64, 16);
+            this.theloai_lb.TabIndex = 4;
+            this.theloai_lb.Text = "Thể loại:";
             // 
-            // TL
+            // namxb_lb
             // 
-            this.TL.HeaderText = "Thể Loại";
-            this.TL.Name = "TL";
-            this.TL.ReadOnly = true;
+            this.namxb_lb.AutoSize = true;
+            this.namxb_lb.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namxb_lb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.namxb_lb.Location = new System.Drawing.Point(73, 258);
+            this.namxb_lb.Name = "namxb_lb";
+            this.namxb_lb.Size = new System.Drawing.Size(105, 16);
+            this.namxb_lb.TabIndex = 3;
+            this.namxb_lb.Text = "Năm xuất bản:";
             // 
-            // TG
+            // Nxb_lb
             // 
-            this.TG.HeaderText = "Tác Giả";
-            this.TG.Name = "TG";
-            this.TG.ReadOnly = true;
+            this.Nxb_lb.AutoSize = true;
+            this.Nxb_lb.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nxb_lb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Nxb_lb.Location = new System.Drawing.Point(73, 198);
+            this.Nxb_lb.Name = "Nxb_lb";
+            this.Nxb_lb.Size = new System.Drawing.Size(101, 16);
+            this.Nxb_lb.TabIndex = 2;
+            this.Nxb_lb.Text = "Nhà xuất bản:";
             // 
-            // NAMXB
+            // tensach_lb
             // 
-            this.NAMXB.HeaderText = "Năm Xuất Bản";
-            this.NAMXB.Name = "NAMXB";
-            this.NAMXB.ReadOnly = true;
+            this.tensach_lb.AutoSize = true;
+            this.tensach_lb.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tensach_lb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tensach_lb.Location = new System.Drawing.Point(73, 142);
+            this.tensach_lb.Name = "tensach_lb";
+            this.tensach_lb.Size = new System.Drawing.Size(69, 16);
+            this.tensach_lb.TabIndex = 1;
+            this.tensach_lb.Text = "Tên sách:";
             // 
-            // NHAXUATBATN
+            // Ten
             // 
-            this.NHAXUATBATN.HeaderText = "Nhà Xuất Bản";
-            this.NHAXUATBATN.Name = "NHAXUATBATN";
-            this.NHAXUATBATN.ReadOnly = true;
+            this.Ten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Ten.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Ten.Location = new System.Drawing.Point(343, 15);
+            this.Ten.Name = "Ten";
+            this.Ten.Size = new System.Drawing.Size(223, 54);
+            this.Ten.TabIndex = 0;
+            this.Ten.Text = "Thêm sách mới";
+            this.Ten.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // NgayNhap
+            // sl_lb
             // 
-            this.NgayNhap.HeaderText = "Ngày Nhập";
-            this.NgayNhap.Name = "NgayNhap";
-            this.NgayNhap.ReadOnly = true;
+            this.sl_lb.AutoSize = true;
+            this.sl_lb.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sl_lb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sl_lb.Location = new System.Drawing.Point(478, 324);
+            this.sl_lb.Name = "sl_lb";
+            this.sl_lb.Size = new System.Drawing.Size(70, 16);
+            this.sl_lb.TabIndex = 21;
+            this.sl_lb.Text = "Số lượng:";
             // 
-            // TriGia
+            // soluong_tb
             // 
-            this.TriGia.HeaderText = "Trị Giá";
-            this.TriGia.Name = "TriGia";
-            this.TriGia.ReadOnly = true;
+            this.soluong_tb.BorderColorFocused = System.Drawing.SystemColors.ButtonFace;
+            this.soluong_tb.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.soluong_tb.BorderColorMouseHover = System.Drawing.SystemColors.ButtonFace;
+            this.soluong_tb.BorderThickness = 3;
+            this.soluong_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.soluong_tb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.soluong_tb.ForeColor = System.Drawing.Color.White;
+            this.soluong_tb.isPassword = false;
+            this.soluong_tb.Location = new System.Drawing.Point(567, 314);
+            this.soluong_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.soluong_tb.Name = "soluong_tb";
+            this.soluong_tb.Size = new System.Drawing.Size(250, 37);
+            this.soluong_tb.TabIndex = 22;
+            this.soluong_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // SachMoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.Themsach_pn);
             this.Name = "SachMoi";
             this.Size = new System.Drawing.Size(922, 509);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            this.Themsach_pn.ResumeLayout(false);
+            this.Themsach_pn.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -433,37 +365,25 @@
         #endregion
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button AddBt;
-        private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.Button EditButton;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button CancelAddBt;
-        private System.Windows.Forms.Button SaveAddBt;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button SaveEditButton;
-        private System.Windows.Forms.Button CancelEdit;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox nxb_tb;
-        private System.Windows.Forms.TextBox namxb_tb;
-        private System.Windows.Forms.TextBox gia_tb;
-        private System.Windows.Forms.TextBox Tensach_tb;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TS;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NAMXB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NHAXUATBATN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TriGia;
+        private System.Windows.Forms.Panel Themsach_pn;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuThinButton2 Them_bt;
+        private Bunifu.Framework.UI.BunifuDatepicker ngaynhap;
+        private Bunifu.Framework.UI.BunifuMetroTextbox trigia_tb;
+        private Bunifu.Framework.UI.BunifuMetroTextbox namxb_tb;
+        private Bunifu.Framework.UI.BunifuMetroTextbox nxb_tb;
+        private Bunifu.Framework.UI.BunifuMetroTextbox tensach_tb;
+        private System.Windows.Forms.Label ngaythem_lb;
+        private System.Windows.Forms.Label trigia_lb;
+        private System.Windows.Forms.Label tacgia_lb;
+        private System.Windows.Forms.Label theloai_lb;
+        private System.Windows.Forms.Label namxb_lb;
+        private System.Windows.Forms.Label Nxb_lb;
+        private System.Windows.Forms.Label tensach_lb;
+        private System.Windows.Forms.Label Ten;
+        private System.Windows.Forms.ComboBox tacgia_cb;
+        private System.Windows.Forms.ComboBox theloai_cb;
+        private Bunifu.Framework.UI.BunifuMetroTextbox soluong_tb;
+        private System.Windows.Forms.Label sl_lb;
     }
 }

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace BUS
 {
-    class TheLoaiBUS
+    public class TheLoaiBUS
     {
         private TheLoaiDAL TheloaiDAL;
         public TheLoaiBUS()
@@ -30,6 +30,12 @@ namespace BUS
         {
             bool re = TheloaiDAL.Sua(tl);
             return re;
+        }
+        public int matheloai(string tentheloai)
+        {
+            int matheloai;
+            matheloai = TheloaiDAL.GetMaTheLoai(tentheloai);
+            return matheloai;
         }
     }
 }
