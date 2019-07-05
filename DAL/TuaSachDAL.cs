@@ -187,5 +187,7 @@ namespace DAL
             int soluongtuasach = dataTable.Rows.Count;
             return soluongtuasach;
         }
+       
+        
     }
 }

@@ -21,24 +21,24 @@ namespace App
 
         private void SaveAddBt_Click(object sender, EventArgs e)
         {
-            SachDTO sach;
-            DauSachDTO dauSach;
-            TuaSachDTO tuaSach;
-            
-            sach.Masach = ;
-            sach.Madausach =;
-            sach.Tinhtrang = "Con2";
+            //SachDTO sach;
+            //DauSachDTO dauSach;
+            //TuaSachDTO tuaSach;
 
-            dauSach.Madausach =;
-            dauSach.Matuasach =;
-            dauSach.Namxb = namxb_tb.Text;
-            dauSach.Nxb = nxb_tb.Text;
-            dauSach.Trigia = float.Parse(gia_tb.Text);
+            //sach.Masach = ;
+            //sach.Madausach =;
+            //sach.Tinhtrang = "Con2";
 
-            tuaSach.Matacgia =;
-            tuaSach.Matheloai =;
-            tuaSach.Matuasach = MaTuDongTuaSach(Tensach_tb.Text);
-            tuaSach.Tuasach = Tensach_tb.Text;
+            //dauSach.Madausach =;
+            //dauSach.Matuasach =;
+            //dauSach.Namxb = namxb_tb.Text;
+            //dauSach.Nxb = nxb_tb.Text;
+            //dauSach.Trigia = float.Parse(gia_tb.Text);
+
+            //tuaSach.Matacgia =;
+            //tuaSach.Matheloai =;
+            //tuaSach.Matuasach = MaTuDongTuaSach(Tensach_tb.Text);
+            //tuaSach.Tuasach = Tensach_tb.Text;
         }
         public int MaTuDongTuaSach(string ts)
         {
@@ -56,7 +56,7 @@ namespace App
         }
         public int MaTuDongDauSach(string ts)
         {
-
+            return 0;
         }
     }
 }

@@ -18,7 +18,7 @@ namespace App
     public partial class DocGia : UserControl
     {
         private DocGiaBUS DgBUS;
-        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-TUJ6O4P\SQLEXPRESS;Initial Catalog=QLTV2;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-8C7RE1Q;Initial Catalog=QUANLYTHUVIEN;Integrated Security=True");
 
         public DocGia()
         {
@@ -535,16 +535,16 @@ namespace App
             index = dataGridView1.CurrentRow.Index;
             textBox6.Text = dataGridView1.Rows[index].Cells[0].Value.ToString();
             textBox9.Text = dataGridView1.Rows[index].Cells[1].Value.ToString();
-            dateTimePicker4.Text = dataGridView1.Rows[index].Cells[2].Value.ToString();
-            textBox8.Text = dataGridView1.Rows[index].Cells[3].Value.ToString();
-            textBox7.Text = dataGridView1.Rows[index].Cells[4].Value.ToString();
+            dateTimePicker4.Text = dataGridView1.Rows[index].Cells[3].Value.ToString();
+            textBox8.Text = dataGridView1.Rows[index].Cells[4].Value.ToString();
+            textBox7.Text = dataGridView1.Rows[index].Cells[5].Value.ToString();
             dateTimePicker5.Text = dataGridView1.Rows[index].Cells[6].Value.ToString();
-            dateTimePicker6.Text = dataGridView1.Rows[index].Cells[7].Value.ToString();
-            if (dataGridView1.Rows[index].Cells[5].Value.ToString() == "Sinh Viên")
+            
+            if (dataGridView1.Rows[index].Cells[2].Value.ToString() == "Sinh Viên")
             {
                 radioButton5.Checked = true;
             }
-            else if (dataGridView1.Rows[index].Cells[5].Value.ToString() == "Công Chức")
+            else if (dataGridView1.Rows[index].Cells[2].Value.ToString() == "Công Chức")
             {
                 radioButton6.Checked = true;
             }
@@ -601,6 +601,20 @@ namespace App
             label39.Show();            
             radioButton2.Show();           
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker5_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime gioihangiatri = dateTimePicker5.Value.AddMonths(6);
+
+            dateTimePicker6.Value = new DateTime(gioihangiatri.Year, gioihangiatri.Month, gioihangiatri.Day);
+        }
+
+
 
         // Giới hạn tuổi độc giả từ 18 đến 55
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

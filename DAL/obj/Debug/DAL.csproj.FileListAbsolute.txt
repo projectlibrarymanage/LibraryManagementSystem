@@ -25,3 +25,12 @@ C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\DAL\obj\De
 C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\DAL\obj\Debug\DAL.dll
 C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\DAL\obj\Debug\DAL.pdb
+C:\Users\vtuit\Desktop\New folder\DAL\bin\Debug\DAL.dll
+C:\Users\vtuit\Desktop\New folder\DAL\bin\Debug\DAL.pdb
+C:\Users\vtuit\Desktop\New folder\DAL\bin\Debug\DTO.dll
+C:\Users\vtuit\Desktop\New folder\DAL\bin\Debug\DTO.pdb
+C:\Users\vtuit\Desktop\New folder\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\vtuit\Desktop\New folder\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\vtuit\Desktop\New folder\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\vtuit\Desktop\New folder\DAL\obj\Debug\DAL.dll
+C:\Users\vtuit\Desktop\New folder\DAL\obj\Debug\DAL.pdb

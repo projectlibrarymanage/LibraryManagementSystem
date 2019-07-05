@@ -447,7 +447,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(466, 305);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 23);
+            this.label3.Size = new System.Drawing.Size(177, 29);
             this.label3.TabIndex = 30;
             this.label3.Text = "Có Giá Trị Đến:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -605,7 +605,7 @@
             this.dateTimePicker3.Location = new System.Drawing.Point(608, 303);
             this.dateTimePicker3.MinDate = new System.DateTime(1964, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(146, 31);
+            this.dateTimePicker3.Size = new System.Drawing.Size(146, 37);
             this.dateTimePicker3.TabIndex = 24;
             this.dateTimePicker3.Value = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker3.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
@@ -618,7 +618,7 @@
             this.dateTimePicker2.Location = new System.Drawing.Point(290, 303);
             this.dateTimePicker2.MinDate = new System.DateTime(1964, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(146, 31);
+            this.dateTimePicker2.Size = new System.Drawing.Size(146, 37);
             this.dateTimePicker2.TabIndex = 24;
             this.dateTimePicker2.Value = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
@@ -630,7 +630,7 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(286, 109);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(211, 31);
+            this.dateTimePicker1.Size = new System.Drawing.Size(211, 37);
             this.dateTimePicker1.TabIndex = 24;
             this.dateTimePicker1.Value = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
@@ -958,10 +958,9 @@
             this.dateTimePicker6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker6.Location = new System.Drawing.Point(135, 354);
-            this.dateTimePicker6.MaxDate = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker6.MinDate = new System.DateTime(1964, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(142, 26);
+            this.dateTimePicker6.Size = new System.Drawing.Size(142, 30);
             this.dateTimePicker6.TabIndex = 44;
             this.dateTimePicker6.Value = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             // 
@@ -972,12 +971,12 @@
             this.dateTimePicker5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker5.Location = new System.Drawing.Point(135, 306);
-            this.dateTimePicker5.MaxDate = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker5.MinDate = new System.DateTime(1964, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(142, 26);
+            this.dateTimePicker5.Size = new System.Drawing.Size(142, 30);
             this.dateTimePicker5.TabIndex = 44;
             this.dateTimePicker5.Value = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker5.ValueChanged += new System.EventHandler(this.dateTimePicker5_ValueChanged);
             // 
             // dateTimePicker4
             // 
@@ -989,7 +988,7 @@
             this.dateTimePicker4.MaxDate = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker4.MinDate = new System.DateTime(1964, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(122, 26);
+            this.dateTimePicker4.Size = new System.Drawing.Size(122, 30);
             this.dateTimePicker4.TabIndex = 44;
             this.dateTimePicker4.Value = new System.DateTime(2001, 12, 31, 0, 0, 0, 0);
             // 
@@ -1128,6 +1127,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(581, 401);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // SaveEditButton
