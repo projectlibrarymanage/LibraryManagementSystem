@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using DTO;
+using System.Windows.Forms;
 namespace BUS
 {
-    class DauSachBUS
+    public class DauSachBUS
     {
         private DauSachDAL DauSach;
         public DauSachBUS()
@@ -28,6 +29,29 @@ namespace BUS
         {
             bool re = DauSach.ALTER(ds);
             return re;
+        }
+        public bool check(string nhaxb, string namxb)
+        {
+            bool re = DauSach.check(nhaxb, namxb);
+            return re;
+        }
+        public int GetMaSach(string nxb, string namxb)
+        {
+            int ma = DauSach.GetMaSach(nxb, namxb);
+            return ma;
+        }
+        public int getds()
+        {
+            int n = DauSach.soluongDauSach();
+            return n;
+        }
+        public void gettacgia(DataGridView dataGridView, string info)
+        {
+            DauSach.gettacgia(dataGridView, info);
+        }
+        public void gettheloai(DataGridView dataGridView, string info)
+        {
+            DauSach.gettheloai(dataGridView, info);
         }
     }
 }

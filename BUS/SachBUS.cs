@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms;
 
 namespace BUS
 {
@@ -32,5 +33,15 @@ namespace BUS
             bool re = DgDAL.Sua(kn);
             return re;
         }
+        public void GetListSach(DataGridView dataGridView)
+        {
+            DgDAL.GetListSach(dataGridView);
+        }
+        public int soluongsach()
+        {
+            int n = DgDAL.soluongsach();
+            return n;
+        }
+        
     }
 }

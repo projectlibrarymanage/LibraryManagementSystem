@@ -120,5 +120,42 @@ namespace DAL
             }
             return true;
         }
+        public int GetMaTacGia(string tentacgia)
+        {
+            int matacgia = new int();
+            string query = string.Empty;
+            query = "select TacGia.MaTacGia from TacGia where TacGia.TenTacGia = N@tentacgia";
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue(@tentacgia, tentacgia);
+
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        SqlDataAdapter dataAdapter = new SqlDataAdapter(query, con); //c.con is the connection string
+                        SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+                        DataTable table = new DataTable();
+                        table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+                        object a = table.Rows[0]["MaTacGia"];
+                        matacgia = Convert.ToInt32(a);
+                        dataAdapter.Fill(table);
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                    }
+                }
+                return matacgia;
+            }
+        }
     }
 }

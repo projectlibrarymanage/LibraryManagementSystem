@@ -11,9 +11,11 @@ namespace DTO
         private int masach;
         private int madausach;
         private string tinhtrang;
+        private DateTime ngaynhap;
 
         public int Masach { get => masach; set => masach = value; }
         public int Madausach { get => madausach; set => madausach = value; }
         public string Tinhtrang { get => tinhtrang; set => tinhtrang = value; }
+        public DateTime Ngaynhap { get => ngaynhap; set => ngaynhap = value; }
     }
 }

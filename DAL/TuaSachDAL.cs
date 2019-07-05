@@ -30,7 +30,7 @@ namespace DAL
         public bool Them(TuaSachDTO add)
         {
             string query = string.Empty;
-            query += "INSERT INTO TuaSach ([Matuasach], [Tuasach], [Matheloai], [Matacgia])";
+            query += "INSERT INTO TuaSach ([Matuasach], [Tuasach], [Matheloai], [Matacgia]) ";
             query += "VALUES (@Matuasach,@Tuasach,@Matheloai,@Matacgia)";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
@@ -60,7 +60,6 @@ namespace DAL
             }
             return true;
         }
-
         public bool Xoa(TuaSachDTO del)
         {
             string query = string.Empty;
@@ -90,7 +89,6 @@ namespace DAL
             }
             return true;
         }
-
         public bool Sua(TuaSachDTO edit)
         {
             string query = string.Empty;
@@ -122,11 +120,10 @@ namespace DAL
             }
             return true;
         }
-
         public bool kiemtra(string tuasach)
         {
             DataTable dataTable = new DataTable();
-            string query = "select * from TuaSach.TuaSach = @tuasach";
+            string query = "select * from TuaSach where TuaSach.TuaSach = @tuasach";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand())
@@ -186,6 +183,75 @@ namespace DAL
             }
             int soluongtuasach = dataTable.Rows.Count;
             return soluongtuasach;
+        }
+        public int GetTuaSach(string tentuasach)
+        {
+            int matheloai = new int();
+            string query = string.Empty;
+            query = "select TuaSach.MaTuaSach from TuaSach where TuaSach.TuaSach = N@ten";
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@ten", tentuasach);
+
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        SqlDataAdapter dataAdapter = new SqlDataAdapter(query, con); //c.con is the connection string
+                        SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+                        DataTable table = new DataTable();
+                        table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+                        object a = table.Rows[0]["MaTuaSach"];
+                        matheloai = Convert.ToInt32(a);
+                        dataAdapter.Fill(table);
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                    }
+                }
+                return matheloai;
+            }
+        }
+        public void getdata(DataGridView dataGridView, string ten)
+        {
+            string query = "select TuaSach.MaTuaSach as 'Mã Tựa Sách',TuaSach.TuaSach as 'Tên Sách', DauSach.NhaXB as 'Nhà Xuất Bản', DauSach.NamXB as 'Năm Xuất Bản',DauSach.TriGia as 'Giá',DauSach.soluong as 'Số lượng',Sach.ngaynhap as 'Ngày nhập'from TuaSach, DauSach, Sach where TuaSach.TuaSach = @tensach AND TuaSach.MaTuaSach = DauSach.MaTuaSach AND Sach.MaDauSach = DauSach.MaDauSach";
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@tensach", ten);
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        SqlDataAdapter sqlDataAdap = new SqlDataAdapter(cmd);
+
+                        DataTable dtRecord = new DataTable();
+                        sqlDataAdap.Fill(dtRecord);
+                        dataGridView.DataSource = dtRecord;
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                    }
+                }
+            }
+            
         }
     }
 }
