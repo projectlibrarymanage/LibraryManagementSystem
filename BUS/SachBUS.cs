@@ -47,6 +47,14 @@ namespace BUS
             bool re = sachDAL.thongkesachmuon(dataGridView1, thangthongke);
             return re;
         }
-
+        public void GetListSach(DataGridView dataGridView)
+        {
+            sachDAL.GetListSach(dataGridView);
+        }
+        public int soluongsach()
+        {
+            int n = sachDAL.soluongsach();
+            return n;
+        }
     }
 }

@@ -135,6 +135,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(922, 508);
@@ -143,7 +144,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.panel8);
             this.panel3.Controls.Add(this.AddReaderBt);
             this.panel3.Controls.Add(this.ChoseBackBt);
             this.panel3.Controls.Add(this.DetailBt);
@@ -153,18 +153,18 @@
             this.panel3.Controls.Add(this.circleButton2);
             this.panel3.Location = new System.Drawing.Point(6, 8);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(908, 493);
+            this.panel3.Size = new System.Drawing.Size(909, 493);
             this.panel3.TabIndex = 2;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.bunifuTileButton2);
             this.panel8.Controls.Add(this.bunifuTileButton1);
-            this.panel8.Controls.Add(this.label38);
             this.panel8.Controls.Add(this.label37);
-            this.panel8.Location = new System.Drawing.Point(1, 455);
+            this.panel8.Controls.Add(this.label38);
+            this.panel8.Location = new System.Drawing.Point(6, 507);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(907, 47);
+            this.panel8.Size = new System.Drawing.Size(907, 71);
             this.panel8.TabIndex = 37;
             // 
             // bunifuTileButton2
@@ -224,7 +224,7 @@
             // 
             this.label37.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.label37.Location = new System.Drawing.Point(321, 23);
+            this.label37.Location = new System.Drawing.Point(301, 16);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(286, 44);
             this.label37.TabIndex = 3;
@@ -684,7 +684,7 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.SaveEditButton);
             this.panel2.Controls.Add(this.CancelEdit);
-            this.panel2.Location = new System.Drawing.Point(0, 541);
+            this.panel2.Location = new System.Drawing.Point(0, 574);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(922, 508);
             this.panel2.TabIndex = 2;

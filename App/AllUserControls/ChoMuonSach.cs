@@ -110,8 +110,6 @@ namespace App.AllUserControls
             theloaicombo.Text = dataGridViewMuon[2, dataGridViewMuon.CurrentRow.Index].Value.ToString();
             tacgiatxt.Text = dataGridViewMuon[3, dataGridViewMuon.CurrentRow.Index].Value.ToString();
             Masachtxt.Text= dataGridViewMuon[0, dataGridViewMuon.CurrentRow.Index].Value.ToString();
-
-
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -121,12 +119,7 @@ namespace App.AllUserControls
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridViewMuon.Rows.Clear();
-            sach.LoadSach(dataGridViewMuon);
-            foreach (DataGridViewRow row in dataGridViewMuon.Rows)
-            {
-                row.HeaderCell.Value = (row.Index + 1).ToString();
-            }
+            
         }
 
        
@@ -136,6 +129,16 @@ namespace App.AllUserControls
             DateTime gioihangiatri = Ngaymuondate.Value.AddDays(4);
 
             ngaytradate.Value = new DateTime(gioihangiatri.Year, gioihangiatri.Month, gioihangiatri.Day);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            dataGridViewMuon.Rows.Clear();
+            sach.LoadSach(dataGridViewMuon);
+            foreach (DataGridViewRow row in dataGridViewMuon.Rows)
+            {
+                row.HeaderCell.Value = (row.Index + 1).ToString();
+            }
         }
     }
 }

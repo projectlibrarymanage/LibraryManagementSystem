@@ -17,8 +17,8 @@ namespace App
 {
     public partial class DocGia : UserControl
     {
-        private DocGiaBUS DgBUS;
-        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-8C7RE1Q;Initial Catalog=QUANLYTHUVIEN;Integrated Security=True");
+        private DocGiaBUS DgBUS = new DocGiaBUS();
+        
 
         public DocGia()
         {
@@ -225,7 +225,7 @@ namespace App
         {
             //try
             //{
-            Con.Open();            
+                       
             //}
             //catch
             //{
@@ -233,30 +233,30 @@ namespace App
             {
                 errorProvider1.SetError(textBox4, "không được để trống");
                 textBox4.Focus();
-                Con.Close();
+                
             }
             else if (textBox4.Text.Length > 0 && textBox1.Text.Length == 0)
             {
                 errorProvider1.SetError(textBox1, "không được để trống");
                 textBox1.Focus();
-                Con.Close();
+                
             }
             else if (textBox4.Text.Length > 0 && textBox1.Text.Length > 0 && textBox2.Text.Length == 0)
             {
                 errorProvider1.SetError(textBox2, "không được để trống");
                 textBox2.Focus();
-                Con.Close();
+                
             }
             else if (textBox4.Text.Length > 0 && textBox1.Text.Length > 0 && textBox2.Text.Length > 0 && textBox3.Text.Length == 0)
             {
                 errorProvider1.SetError(textBox3, "không được để trống");
                 textBox3.Focus();
-                Con.Close();
+                
             }
             else if (radioButton1.Checked == false && radioButton2.Checked == false)
             {
                 MessageBox.Show("Bạn chưa chọn Loại độc giả !", "Lưu ý !!");
-                Con.Close();
+               
             }
             //}
             //finally
@@ -291,19 +291,13 @@ namespace App
                 if (ketqua == false)
                 {
                     MessageBox.Show("Thêm độc giả thất bại. Vui lòng kiểm tra lại dữ liệu");
-                    Con.Close();
+                   
                 }
                 else
                 {
                     MessageBox.Show("Thêm độc giả thành công");
+                    DgBUS.Getlistreader(dataGridView1);
 
-                    string DocgiaDgv = "select * from DocGia";
-                    SqlCommand commandDocGia = new SqlCommand(DocgiaDgv, Con);
-                    SqlDataAdapter adapterDocGia = new SqlDataAdapter(commandDocGia);
-                    DataTable table = new DataTable();
-                    adapterDocGia.Fill(table);
-                    dataGridView1.DataSource = table;
-                    Con.Close();
                 }
             }
             //}
@@ -314,7 +308,7 @@ namespace App
         {
             try
             {               
-                Con.Open();                
+                                
             }
             catch
             {
@@ -322,30 +316,30 @@ namespace App
                 {
                     errorProvider1.SetError(textBox6, "không được để trống");
                     textBox6.Focus();
-                    Con.Close();
+                    
                 }
                 else if (textBox6.Text.Length > 0 && textBox9.Text.Length == 0)
                 {
                     errorProvider1.SetError(textBox9, "không được để trống");
                     textBox9.Focus();
-                    Con.Close();
+                  
                 }
                 else if (textBox6.Text.Length > 0 && textBox9.Text.Length > 0 && textBox8.Text.Length == 0)
                 {
                     errorProvider1.SetError(textBox8, "không được để trống");
                     textBox8.Focus();
-                    Con.Close();
+                    
                 }
                 else if (textBox6.Text.Length > 0 && textBox9.Text.Length > 0 && textBox8.Text.Length > 0 && textBox7.Text.Length == 0)
                 {
                     errorProvider1.SetError(textBox7, "không được để trống");
                     textBox7.Focus();
-                    Con.Close();
+                    
                 }
                 else if (radioButton5.Checked == false && radioButton6.Checked == false)
                 {
                     MessageBox.Show("Bạn chưa chọn Loại độc giả !", "Lưu ý !!");
-                    Con.Close();
+                    
                 }
             }
             finally
@@ -378,20 +372,13 @@ namespace App
                 if (ketqua == false)
                 {
                     MessageBox.Show("Thêm độc giả thất bại. Vui lòng kiểm tra lại dữ liệu");
-                    Con.Close();
+                    
                 }
                 else
                 {
-                    MessageBox.Show("Thêm độc giả thành công");                   
-                    
-                    string DocgiaDgv = "select * from DocGia";
-                    SqlCommand commandDocGia = new SqlCommand(DocgiaDgv, Con);
-                    SqlDataAdapter adapterDocGia = new SqlDataAdapter(commandDocGia);
-                    DataTable table = new DataTable();
-                    adapterDocGia.Fill(table);
-                   
-                    dataGridView1.DataSource = table;
-                    Con.Close();
+                    MessageBox.Show("Thêm độc giả thành công");
+
+                    DgBUS.Getlistreader(dataGridView1);
 
                 }
 
@@ -451,19 +438,12 @@ namespace App
             if (kq == false)
             {
                 MessageBox.Show("Sửa độc giả thất bại. Vui lòng kiểm tra lại dũ liệu");
-                Con.Close();
+                
             }
             else
             {
                 MessageBox.Show("Sửa độc giả thành công");
-                Con.Open();
-                string DocgiaDgv = "select * from DocGia";
-                SqlCommand commandDocGia = new SqlCommand(DocgiaDgv, Con);
-                SqlDataAdapter adapterDocGia = new SqlDataAdapter(commandDocGia);
-                DataTable table = new DataTable();
-                adapterDocGia.Fill(table);
-                dataGridView1.DataSource = table;
-                Con.Close();
+                DgBUS.Getlistreader(dataGridView1);
             }
 
             
@@ -500,14 +480,7 @@ namespace App
                 else
                 {
                     MessageBox.Show("Xóa độc giả thành công");
-                    Con.Open();
-                    string DocgiaDgv = "select * from DocGia";
-                    SqlCommand commandDocGia = new SqlCommand(DocgiaDgv, Con);
-                    SqlDataAdapter adapterDocGia = new SqlDataAdapter(commandDocGia);
-                    DataTable table = new DataTable();
-                    adapterDocGia.Fill(table);
-                    dataGridView1.DataSource = table;
-                    Con.Close();
+                    DgBUS.Getlistreader(dataGridView1);
                 }
             }
         }
@@ -553,26 +526,14 @@ namespace App
         //Tìm thông tin
         private void LoadGridByKeyword()
         {
-            Con.Open();
+
             if (radioButton3.Checked)
             {
-                string MaDocgiaDgv = "select * from DocGia where Madocgia like '%" + textBox5.Text + "%'";
-                SqlCommand commandDocGia = new SqlCommand(MaDocgiaDgv, Con);
-                SqlDataAdapter adapterDocGia = new SqlDataAdapter(commandDocGia);
-                DataTable table = new DataTable();
-                adapterDocGia.Fill(table);
-                dataGridView1.DataSource = table;
-                Con.Close();
+                DgBUS.Getlistma(dataGridView1, textBox5.Text);
             }
             else
             {
-                string TenDocgiaDgv = "select * from DocGia where Hoten like '%" + textBox5.Text + "%'";
-                SqlCommand commandDocGia = new SqlCommand(TenDocgiaDgv, Con);
-                SqlDataAdapter adapterDocGia = new SqlDataAdapter(commandDocGia);
-                DataTable table = new DataTable();
-                adapterDocGia.Fill(table);
-                dataGridView1.DataSource = table;
-                Con.Close();
+                DgBUS.getlistten(dataGridView1, textBox5.Text);
             }
         }
 

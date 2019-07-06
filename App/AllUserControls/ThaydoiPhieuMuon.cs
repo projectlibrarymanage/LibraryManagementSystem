@@ -16,5 +16,10 @@ namespace App.AllUserControls
         {
             InitializeComponent();
         }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

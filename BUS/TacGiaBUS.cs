@@ -32,9 +32,15 @@ namespace BUS
             bool re = TgDAL.Sua(kn);
             return re;
         }
-        //public List<TacGiaDTO> select()
-        //{
-        //    return TgDAL.select();
-        //}
+        public int mathetacgia(string tentacgia)
+        {
+            int matacgia;
+            matacgia = TgDAL.GetMaTacGia(tentacgia);
+            return matacgia;
+        }
+        public void load(ComboBox comboBox)
+        {
+            TgDAL.Loaddanhsachtg(comboBox);
+        }
     }
 }

@@ -10,3 +10,15 @@ C:\Users\Administrator\Desktop\phục\LibraryManagementSystem\DTO\obj\Debug\DTO.
 C:\Users\Administrator\Desktop\phục\LibraryManagementSystem\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\phục\LibraryManagementSystem\DTO\obj\Debug\DTO.dll
 C:\Users\Administrator\Desktop\phục\LibraryManagementSystem\DTO\obj\Debug\DTO.pdb
+C:\Users\vtuit\Desktop\New folder\DTO\bin\Debug\DTO.dll
+C:\Users\vtuit\Desktop\New folder\DTO\bin\Debug\DTO.pdb
+C:\Users\vtuit\Desktop\New folder\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\vtuit\Desktop\New folder\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\vtuit\Desktop\New folder\DTO\obj\Debug\DTO.dll
+C:\Users\vtuit\Desktop\New folder\DTO\obj\Debug\DTO.pdb
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\DTO\bin\Debug\DTO.dll
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\DTO\bin\Debug\DTO.pdb
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\DTO\obj\Debug\DTO.dll
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\DTO\obj\Debug\DTO.pdb

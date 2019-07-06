@@ -31,3 +31,25 @@ C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\obj\De
 C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\obj\Debug\BUS.dll
 C:\Users\DELL\OneDrive\Desktop\CurrentProject\LibraryManagementSystem\BUS\obj\Debug\BUS.pdb
+C:\Users\vtuit\Desktop\New folder\BUS\bin\Debug\BUS.dll
+C:\Users\vtuit\Desktop\New folder\BUS\bin\Debug\BUS.pdb
+C:\Users\vtuit\Desktop\New folder\BUS\bin\Debug\DAL.dll
+C:\Users\vtuit\Desktop\New folder\BUS\bin\Debug\DTO.dll
+C:\Users\vtuit\Desktop\New folder\BUS\bin\Debug\DAL.pdb
+C:\Users\vtuit\Desktop\New folder\BUS\bin\Debug\DTO.pdb
+C:\Users\vtuit\Desktop\New folder\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\vtuit\Desktop\New folder\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\vtuit\Desktop\New folder\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\vtuit\Desktop\New folder\BUS\obj\Debug\BUS.dll
+C:\Users\vtuit\Desktop\New folder\BUS\obj\Debug\BUS.pdb
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\bin\Debug\BUS.dll
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\bin\Debug\BUS.pdb
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\bin\Debug\DAL.dll
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\bin\Debug\DTO.dll
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\bin\Debug\DAL.pdb
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\bin\Debug\DTO.pdb
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\obj\Debug\BUS.dll
+C:\Users\vtuit\Desktop\NMCNPM\backup\New folder (3)\New folder\BUS\obj\Debug\BUS.pdb

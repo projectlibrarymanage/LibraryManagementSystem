@@ -30,8 +30,8 @@ namespace DAL
         public bool Them(DocGiaDTO add)
         {
             string query = string.Empty;
-            query += "INSERT INTO DocGia ([Madocgia], [Hoten], [Ngaysinh], [Diachi], [Email], [Loaidocgia], [Ngaylapthe], [Cogiatri])";
-            query += "VALUES (@Madocgia,@Hoten,@Ngaysinh,@Diachi,@Email,@Loaidocgia,@Ngaylapthe,@Cogiatri)";
+            query += "INSERT INTO DocGia ([MaDocGia], [TenDocGia], [MaLoaiDocGia],[NgaySinh], [DiaChi], [Email],  [Ngaylapthe])";
+            query += "VALUES (@Madocgia,@Hoten,@Maloaidocgia,@Ngaysinh,@Diachi,@Email,@Ngaylapthe)";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -45,9 +45,8 @@ namespace DAL
                     cmd.Parameters.AddWithValue("@Ngaysinh", add.Ngaysinh);
                     cmd.Parameters.AddWithValue("@Diachi", add.Diachi);
                     cmd.Parameters.AddWithValue("@Email", add.Email);
-                    cmd.Parameters.AddWithValue("@Loaidocgia", add.Loaidocgia);
-                    cmd.Parameters.AddWithValue("@Ngaylapthe", add.Ngaylapthe);
-                    cmd.Parameters.AddWithValue("@Cogiatri", add.Cogiatri);
+                    cmd.Parameters.AddWithValue("@Maloaidocgia", add.Loaidocgia);
+                    cmd.Parameters.AddWithValue("@Ngaylapthe", add.Ngaylapthe);                    
                     try
                     {
                         con.Open();
@@ -98,7 +97,7 @@ namespace DAL
         public bool Sua(DocGiaDTO edit)
         {
             string query = string.Empty;
-            query += "UPDATE DocGia SET [Hoten] = @Hoten, [Ngaysinh] = @Ngaysinh, [Diachi] = @Diachi, [Email] = @Email, [Loaidocgia] = @Loaidocgia, [Ngaylapthe] = @Ngaylapthe,[Cogiatri] = @Cogiatri WHERE [Madocgia] = @Madocgia";
+            query += "UPDATE DocGia SET [TenDocGia] = @Hoten, [NgaySinh] = @Ngaysinh, [DiaChi] = @Diachi, [Email] = @Email, [MaLoaiDocGia] = @Loaidocgia, [NgayLapThe] = @Ngaylapthe WHERE [Madocgia] = @Madocgia";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand())
@@ -197,9 +196,9 @@ namespace DAL
                 adapterDocGia.Fill(table);
                 dataGridView1.DataSource = table;
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                dataGridView1.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
+                dataGridView1.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy";
                 dataGridView1.Columns[6].DefaultCellStyle.Format = "dd/MM/yyyy";
-                dataGridView1.Columns[7].DefaultCellStyle.Format = "dd/MM/yyyy";
+              
             }
             catch
             {
@@ -211,7 +210,56 @@ namespace DAL
                 Con.Close();
             }
         }
+        public void listreaderMa(DataGridView dataGridView1, string ma)
+        {
+            try
+            {
+                SqlConnection Con = new SqlConnection(ConnectionString);
+                Con.Open();
+                string DocgiaDgv = "select * from DocGia where Madocgia like '%" + ma + "%'";
+                SqlCommand commandDocGia = new SqlCommand(DocgiaDgv, Con);
+                SqlDataAdapter adapterDocGia = new SqlDataAdapter(commandDocGia);
+                DataTable table = new DataTable();
+                adapterDocGia.Fill(table);
+                dataGridView1.DataSource = table;
+                Con.Close();
 
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi kết nối hệ thống", " ERROR ");
+            }
+            finally
+            {
+                SqlConnection Con = new SqlConnection(ConnectionString);
+                Con.Close();
+            }
+        }
+        public void listreaderTen(DataGridView dataGridView, string ten)
+        {
+            try
+            {
+                SqlConnection Con = new SqlConnection(ConnectionString);
+                Con.Open();
+                string DocgiaDgv = "select * from DocGia where TenDocGia like N'%" + ten + "%'";
+                SqlCommand commandDocGia = new SqlCommand(DocgiaDgv, Con);
+                SqlDataAdapter adapterDocGia = new SqlDataAdapter(commandDocGia);
+                DataTable table = new DataTable();
+                adapterDocGia.Fill(table);
+                dataGridView.DataSource = table;
+                Con.Close();
+
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi kết nối hệ thống", " ERROR ");
+            }
+            finally
+            {
+                SqlConnection Con = new SqlConnection(ConnectionString);
+                Con.Close();
+            }
+        }
 
     }
 }

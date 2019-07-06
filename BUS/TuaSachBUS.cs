@@ -31,8 +31,7 @@ namespace BUS
         {
             bool re = TsDAL.Sua(kn);
             return re;
-        }
-
+        }    
         public bool kiemtra(string tuasach)
         {
             bool re = TsDAL.kiemtra(tuasach);
@@ -42,6 +41,15 @@ namespace BUS
         {
             int sl = TsDAL.soluongtuasach();
             return sl;
+        }
+        public int getmatuasach(string ten)
+        {
+            int matua = TsDAL.GetTuaSach(ten);
+            return matua;
+        }
+        public void getdata(DataGridView dataGridView, string ten)
+        {
+            TsDAL.getdata(dataGridView, ten);
         }
     }
 }

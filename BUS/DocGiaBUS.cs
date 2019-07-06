@@ -40,6 +40,16 @@ namespace BUS
         public void Getlistreader(DataGridView dataGridView1 )
         {
             DgDAL.GetListReader(dataGridView1);
-        }        
+        }
+
+        public void Getlistma(DataGridView dataGridView, string ma)
+        {
+            DgDAL.listreaderMa(dataGridView, ma);
+        }
+
+        public void getlistten(DataGridView dataGridView, string ten)
+        {
+            DgDAL.listreaderTen(dataGridView, ten);
+        }
     }
 }

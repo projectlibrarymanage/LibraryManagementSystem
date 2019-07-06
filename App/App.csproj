@@ -69,6 +69,12 @@
     <Compile Include="AllUserControls\ChoMuonSach.Designer.cs">
       <DependentUpon>ChoMuonSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllUserControls\SAch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControls\SAch.Designer.cs">
+      <DependentUpon>SAch.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllUserControls\ThaydoiDocGia.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControls\ChoMuonSach.resx">
       <DependentUpon>ChoMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControls\SAch.resx">
+      <DependentUpon>SAch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControls\ThaydoiDocGia.resx">
       <DependentUpon>ThaydoiDocGia.cs</DependentUpon>

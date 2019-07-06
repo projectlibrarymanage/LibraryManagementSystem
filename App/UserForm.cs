@@ -365,7 +365,7 @@ namespace App
 
         private void button13_Click(object sender, EventArgs e)
         {
-            ThaydoiPhieuMuon uc6 = new ThaydoiPhieuMuon();
+            SAch uc6 = new SAch();
             panel2.Controls.Add(uc6);
             uc6.BringToFront();
             uc6.Dock = DockStyle.Fill;
@@ -377,7 +377,20 @@ namespace App
             panel2.Controls.Add(uc7);
             uc7.BringToFront();
             uc7.Dock = DockStyle.Fill;
-        }       
+        }
+
+        private void ThayDoiPhieuMuonBt_Click(object sender, EventArgs e)
+        {
+            ThaydoiPhieuMuon uc = new ThaydoiPhieuMuon();
+            panel2.Controls.Add(uc);
+            uc.BringToFront();
+            uc.Dock = DockStyle.Fill;
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void button9_Click(object sender, EventArgs e)
         {
